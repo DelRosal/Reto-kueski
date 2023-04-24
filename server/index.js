@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
 const path = require('path');
-
+debug.log(port);
 
 app.use( express.static( path.resolve( __dirname, '../client/build')));
 
